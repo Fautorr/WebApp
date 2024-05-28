@@ -21,10 +21,31 @@ main {
     padding: 0 1rem;
 }
 
-.moonbased_logo {
-    width: 30px;
-    height: 30px;
+.moonbased-logo-container {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
     margin: 10px 10px;
+    /*pointer-events: none;*/
+    user-select: none;
+    transition: transform 0.1s ease-in-out;
+}
+
+/* Hover state to trigger the animation */
+.moonbased-logo-container:hover {
+    animation: shake 0.1s infinite alternate; /* Apply the shake animation on hover */
+}
+
+/* Keyframes for the shake animation */
+@keyframes shake {
+    from {
+        transform: rotateZ(-5deg); /* Rotate slightly to the left */
+    }
+    to {
+        transform: rotateZ(5deg); /* Rotate slightly to the right */
+    }
 }
 /* Flexbox for layout */
 .flex-container {
