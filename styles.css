@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #000000;
+    color: #303030;
     padding: 1rem;
     text-align: center;
 }
@@ -21,6 +21,11 @@ main {
     padding: 0 1rem;
 }
 
+.logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px 10px;
+}
 /* Flexbox for layout */
 .flex-container {
     display: flex;
@@ -44,7 +49,7 @@ p {
 
 /* Custom Scrollbar Styles */
 ::-webkit-scrollbar {
-    width: 12px; /* Set the width of the scrollbar */
+    width: 8px; /* Set the width of the scrollbar */
 }
 
 /* Track */
@@ -54,11 +59,12 @@ p {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #888; /* Color of the scrollbar handle */
-    border-radius: 6px; /* Rounded corners for the scrollbar handle */
-}
+    background: #303030;
+    border-radius: 0;
+   }
 
 /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the scrollbar handle when hovered */
+    background: #252525;
 }
