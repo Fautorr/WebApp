@@ -3,33 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Telegram WebApp</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Mobile Friendly Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Welcome to My Telegram WebApp</h1>
-<button id="sendMessageButton">Send Message to Bot</button>
-
-<script>
-    document.getElementById('sendMessageButton').addEventListener('click', () => {
-        if (window.Telegram.WebApp) {
-            window.Telegram.WebApp.sendData("Hello from WebApp!");
-        } else {
-            alert("Telegram WebAp is not available.");
-        }
-    });
-</script>
+<header>
+    <h1>Welcome to Our Mobile Friendly Page</h1>
+</header>
+<main>
+    <div class="container">
+        <section class="flex-container">
+            <div class="flex-item" style="background: #f4f4f4; padding: 1rem;">
+                <h2>Section 1</h2>
+                <p>This is some text for section 1. It will adjust based on the screen size.</p>
+            </div>
+            <div class="flex-item" style="background: #e4e4e4; padding: 1rem;">
+                <h2>Section 2</h2>
+                <p>This is some text for section 2. It will adjust based on the screen size.</p>
+            </div>
+            <div class="flex-item" style="background: #d4d4d4; padding: 1rem;">
+                <h2>Section 3</h2>
+                <p>This is some text for section 3. It will adjust based on the screen size.</p>
+            </div>
+        </section>
+    </div>
+</main>
 </body>
 </html>
